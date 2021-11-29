@@ -1,0 +1,11 @@
+syntax: glob
+
+*.swp
+*.pyc
+*~
+*egg-info
+.DS_Store
+build
+dist
+MANIFEST
+PKG-INFO
