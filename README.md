@@ -1,5 +1,5 @@
-# CertDNS
-CertDNS
+# DNS Proxy Checking Records with SSL certificate
+DNS
 
 # Dependencies
 python3.8
