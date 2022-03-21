@@ -139,7 +139,8 @@ def validate(dns_record,DNSserverIP):
 				# validationtime = time.time()
 				try:
 
-					sig_ret = subprocess.check_output("openssl verify -CAfile isrgrootx1.pem -untrusted lets-encrypt-r3.pem "+cert_loc+'.pem',shell=True)
+					#
+					sig_ret = subprocess.check_output("openssl verify -CAfile put-CA-Cert-here -untrusted put-intermediate-Cert-here "+cert_loc+'.pem',shell=True)
 					# print("@@ SIG VAL RESULT :",str(sig_ret[-3:]))
 				
 					sig_cname = subprocess.check_output("openssl x509 -noout -subject -in "+cert_loc+'.pem',shell=True)
